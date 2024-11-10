@@ -46,20 +46,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/greetingSection"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Heart Health"
         android:textColor="#000"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/healthCard"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
         android:layout_below="@id/heartHealthTitle"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="4dp"
         android:backgroundTint="#E1F5D8"
@@ -73,18 +73,18 @@
 
             <ImageView
                 android:id="@+id/haha"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:background="@drawable/circle"
-                android:src="@drawable/ic_heart"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_heart" />
 
             <TextView
-                android:layout_marginTop="15dp"
                 android:id="@+id/healthText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/haha"
+                android:layout_marginTop="10dp"
                 android:text="Health"
                 android:textColor="#000"
                 android:textSize="18sp"
@@ -103,14 +103,14 @@
             <Button
                 android:id="@+id/diagnosticButton"
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:padding="8dp"
                 android:background="@drawable/rounded"
+                android:padding="8dp"
                 android:text="Diagnostic"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/heartImage"
@@ -125,18 +125,17 @@
 
     <LinearLayout
         android:id="@+id/khung2"
-        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/healthCard"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
-
         <androidx.cardview.widget.CardView
-            android:layout_marginStart="16dp"
             android:layout_width="0dp"
             android:layout_height="160dp"
+            android:layout_marginStart="16dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
             app:cardCornerRadius="20dp">
@@ -144,68 +143,52 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp">
+                android:padding="16dp">
 
                 <ImageButton
                     android:id="@+id/sds"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/circle"
-                    android:src="@drawable/ic_heartpres" />
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_sleep" />
 
                 <TextView
                     android:id="@+id/wwewe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/sds"
-                    android:text="Heart pressure" />
+                    android:layout_marginTop="5dp"
+                    android:text="Sleep"
+                    android:textSize="18sp" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/wwewe">
+                    android:layout_below="@id/wwewe"
+                    android:text="6.5 hours"
+                    android:textSize="34sp"/>
 
-                    <TextView
-                        android:id="@+id/valueText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="123"
-                        android:textSize="45sp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <TextView
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/denominatorText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="/ 80"
-                        android:textSize="20sp"
-                        app:layout_constraintStart_toEndOf="@id/valueText"
-                        app:layout_constraintTop_toTopOf="@id/valueText"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:paddingStart="4dp"
-            android:layout_marginEnd="16dp"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
+            android:layout_marginEnd="16dp"
             android:layout_weight="1"
+            android:paddingStart="4dp"
             app:cardCornerRadius="20dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp">
+                android:padding="16dp">
 
                 <ImageButton
                     android:id="@+id/sds1"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/circle"
                     android:src="@drawable/ic_heartrythmn" />
 
@@ -214,7 +197,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/sds1"
-                    android:text="Heart pressure" />
+                    android:layout_marginTop="5dp"
+                    android:text="Heart pressure"
+                    android:textSize="18sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
@@ -222,23 +207,23 @@
                     android:layout_below="@id/wwewe1">
 
                     <TextView
-                        android:id="@+id/valueText1"
+                        android:id="@+id/valueText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="123"
-                        android:textSize="45sp"
+                        android:textSize="34sp"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="MissingConstraints" />
 
                     <TextView
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/denominatorText1"
+                        android:id="@+id/denominatorText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:text="/ 80"
-                        android:textSize="20sp"
-                        app:layout_constraintStart_toEndOf="@id/valueText1"
-                        app:layout_constraintTop_toTopOf="@id/valueText1"/>
+                        android:textSize="17sp"
+                        app:layout_constraintStart_toEndOf="@id/valueText"
+                        app:layout_constraintTop_toTopOf="@id/valueText" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -249,9 +234,11 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/doctorCard"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="280dp"
         android:layout_below="@id/khung2"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         app:cardCornerRadius="20dp">
 
         <RelativeLayout
@@ -261,54 +248,33 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/doctorImage"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_alignParentStart="true"
+                android:background="@drawable/circle"
                 android:contentDescription="Doctor Image"
-                android:src="@drawable/img"
-                />
+                android:src="@drawable/ic_running" />
 
-            <TextView
-                android:id="@+id/doctorName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_toEndOf="@id/doctorImage"
-                android:text="Robert Fox"
-                android:textColor="#000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/doctorSpecialty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/doctorName"
                 android:layout_marginStart="8dp"
                 android:layout_toEndOf="@id/doctorImage"
-                android:text="Cardiologist"
+                android:gravity="center_horizontal"
+                android:text="Steps"
                 android:textColor="#777"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
-            <ImageButton
-                android:id="@+id/callButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/ic_call"
-                android:background="@drawable/circle"/>
+                android:text="20000 steps"
+                android:textSize="34sp"/>
 
-            <ImageView
-                android:id="@+id/messageButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_toStartOf="@id/callButton"
-                android:contentDescription="Message Button"
-                android:src="@drawable/ic_chat_x24"
-                android:background="@drawable/circle"
-                android:scaleType="centerInside"/>
+
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
