@@ -102,10 +102,9 @@
             <Button
                 android:id="@+id/diagnosticButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="37dp"
                 android:layout_alignParentBottom="true"
                 android:background="@drawable/rounded"
-                android:padding="8dp"
                 android:text="Diagnostic"
                 android:textColor="#000000"
                 android:textSize="14sp"
