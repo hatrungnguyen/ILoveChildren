@@ -10,7 +10,7 @@
             android:title="@string/title_home" />
 
         <item
-            android:id="@+id/navigation_dashboard"
+            android:id="@+id/navigation_my_profile"
             android:icon="@drawable/ic_person_24"
             android:title="@string/title_my_profile" />
 

@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_my_profile"
         android:name="vn.edu.usth.ilovechildren.ui.my_profile.MyProfileFragment"
         android:label="@string/title_my_profile"
         tools:layout="@layout/fragment_my_profile" />
@@ -21,5 +21,16 @@
         android:id="@+id/navigation_settings"
         android:name="vn.edu.usth.ilovechildren.ui.settings.SettingsFragment"
         android:label="@string/settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_measurement"
+            app:destination="@id/navigation_measurement" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_measurement"
+        android:name="vn.edu.usth.ilovechildren.ui.settings.MeasurementFragment"
+        android:label="Measurement Units"
+        tools:layout="@layout/fragment_measurement"/>
+
 </navigation>
