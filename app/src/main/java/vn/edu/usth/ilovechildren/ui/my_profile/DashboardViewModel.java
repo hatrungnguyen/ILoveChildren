@@ -1,4 +1,4 @@
-package vn.edu.usth.myapplication.ui.dashboard;
+package vn.edu.usth.ilovechildren.ui.my_profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

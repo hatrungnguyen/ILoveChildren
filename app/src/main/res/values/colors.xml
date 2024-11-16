@@ -12,4 +12,6 @@
     <color name="sync">#D982E051</color>
     <color name="graphite">#1E1919</color>
     <color name="background_login">#BFF6B9</color>
+<!--    sleep-->
+    <color name="text_sleep">#EDE9DD</color>
 </resources>
