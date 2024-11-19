@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import vn.edu.usth.myapplication.R;
 
@@ -22,20 +24,57 @@ public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         notificationIcon = view.findViewById(R.id.notificationIcon);
         diagnosticButton = view.findViewById(R.id.diagnosticButton);
 
-        diagnosticButton.setOnClickListener(v -> {
-            Log.d(TAG, "Diagnostic");
+        diagnosticButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                NavController navController = Navigation.findNavController(v);
+                navController.navigate(R.id.action_test);
+            }
+
         });
 
-        notificationIcon.setOnClickListener(v -> {
+
+        notificationIcon.setOnClickListener(v ->
+        {
             Log.d(TAG, "Notifications");
         });
 
+        view.findViewById(R.id.steps).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                NavController navController = Navigation.findNavController(v);
+                navController.navigate(R.id.action_steps);
+            }
+        });
+
+        view.findViewById(R.id.heart_pressure).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                NavController navController = Navigation.findNavController(v);
+                navController.navigate(R.id.action_heart);
+            }
+        });
+
+        view.findViewById(R.id.sleepCard).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                NavController navController = Navigation.findNavController(v);
+                navController.navigate(R.id.action_sleep);
+            }
+        });
+
+
         return view;
     }
+
+
 }

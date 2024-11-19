@@ -9,7 +9,21 @@
         android:id="@+id/navigation_home"
         android:name="vn.edu.usth.ilovechildren.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_heart"
+            app:destination="@id/navigation_heart" />
+        <action
+            android:id="@+id/action_steps"
+            app:destination="@id/navigation_step" />
+        <action
+            android:id="@+id/action_sleep"
+            app:destination="@id/navigation_sleep"/>
+
+        <action
+            android:id="@+id/action_test"
+            app:destination="@+id/navigation_test"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_my_profile"
@@ -32,5 +46,29 @@
         android:name="vn.edu.usth.ilovechildren.ui.settings.MeasurementFragment"
         android:label="Measurement Units"
         tools:layout="@layout/fragment_measurement"/>
+
+    <fragment
+        android:id="@+id/navigation_heart"
+        android:name="vn.edu.usth.ilovechildren.ui.home.HeartFragment"
+        android:label="Heart"
+        tools:layout="@layout/fragment_heart"/>
+
+    <fragment
+        android:id="@+id/navigation_test"
+        android:name="vn.edu.usth.ilovechildren.ui.home.TestDBFragment"
+        android:label="Steps"
+        tools:layout="@layout/recycle_view_testdb"/>
+
+    <fragment
+        android:id="@+id/navigation_sleep"
+        android:name="vn.edu.usth.ilovechildren.ui.home.SleepFragment"
+        android:label="Sleep"
+        tools:layout="@layout/fragment_sleep"/>
+
+    <fragment
+        android:id="@+id/navigation_step"
+        android:name="vn.edu.usth.ilovechildren.ui.home.StepFragment"
+        android:label="Step"
+        tools:layout="@layout/fragment_step"/>
 
 </navigation>

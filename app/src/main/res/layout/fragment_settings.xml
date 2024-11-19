@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     android:background="#F7F7F7">
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cv1"
         android:layout_width="match_parent"
@@ -32,12 +27,12 @@
                 android:id="@+id/cv1t1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:text="Account"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:clickable="true"
-                android:focusable="true"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -72,6 +67,7 @@
                 android:id="@+id/cv1t5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintLeft_toRightOf="@id/cv1t4"
                 app:layout_constraintTop_toBottomOf="@id/cv1t3" />
@@ -85,6 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:paddingStart="20dp"
+        android:paddingEnd="0dp"
         android:paddingBottom="5dp"
         android:text="General settings"
         android:textSize="15sp"
@@ -110,14 +107,14 @@
                 android:id="@+id/cv2t1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="16dp"
                 android:text="Measurement unit"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:padding="16dp"
-                android:background="@drawable/selector"
-                android:clickable="true"
-                android:focusable="true"
                 tools:ignore="MissingConstraints" />
 
             <View
@@ -131,14 +128,14 @@
                 android:id="@+id/cv2t3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:padding="16dp"
                 android:text="Notifications"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/cv2t2"
-                android:clickable="true"
-                android:focusable="true"
                 tools:ignore="MissingConstraints" />
 
             <View
@@ -152,14 +149,14 @@
                 android:id="@+id/cv2t5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:padding="16dp"
                 android:text="Accessory"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/cv2t4"
-                android:clickable="true"
-                android:focusable="true"
                 tools:ignore="MissingConstraints" />
 
 
@@ -170,13 +167,13 @@
         android:id="@+id/t2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Private"
-        app:layout_constraintTop_toBottomOf="@id/cv2"
         android:layout_marginTop="20dp"
-        android:paddingBottom="5dp"
         android:paddingStart="20dp"
+        android:paddingBottom="5dp"
+        android:text="Private"
         android:textSize="15sp"
         android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/cv2"
         tools:ignore="MissingConstraints" />
 
 
@@ -199,13 +196,13 @@
                 android:id="@+id/cv3t1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Permissions"
-                android:textColor="@color/black"
-                android:padding="16dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:clickable="true"
                 android:focusable="true"
+                android:padding="16dp"
+                android:text="Permissions"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:ignore="MissingConstraints" />
 
             <View
@@ -219,14 +216,14 @@
                 android:id="@+id/cv3t3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:padding="16dp"
                 android:text="About apps"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/cv3t2"
-                android:clickable="true"
-                android:focusable="true"
                 tools:ignore="MissingConstraints" />
 
             <View
@@ -240,14 +237,14 @@
                 android:id="@+id/cv3t5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:padding="16dp"
                 android:text="Helps"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/cv3t4"
-                android:clickable="true"
-                android:focusable="true"
                 tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -256,8 +253,8 @@
         android:id="@+id/cv4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="#FD0202"
         app:cardCornerRadius="20dp"
@@ -271,10 +268,10 @@
                 android:id="@+id/cv4t1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="Sign Out"
                 android:clickable="true"
                 android:focusable="true"
+                android:padding="16dp"
+                android:text="Sign Out"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"

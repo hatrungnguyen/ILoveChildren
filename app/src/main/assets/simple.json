@@ -1,0 +1,110 @@
+{
+  "patient_id": "P001",
+  "name": "Nguyen Van A",
+  "daily_data": [
+    {
+      "date": 1732032145,
+      "sleep_hours": 7.0,
+      "steps": 8500,
+      "heart_rate": 72,
+      "systolic_pressure": 120,
+      "diastolic_pressure": 80
+    },
+    {
+      "date": 1732118545,
+      "sleep_hours": 6.5,
+      "steps": 9000,
+      "heart_rate": 75,
+      "systolic_pressure": 118,
+      "diastolic_pressure": 78
+    },
+    {
+      "date": 1732204945,
+      "sleep_hours": 7.8,
+      "steps": 11000,
+      "heart_rate": 68,
+      "systolic_pressure": 115,
+      "diastolic_pressure": 75
+    },
+    {
+      "date": 1732291345,
+      "sleep_hours": 7.2,
+      "steps": 8382,
+      "heart_rate": 76,
+      "systolic_pressure": 118,
+      "diastolic_pressure": 75
+    },
+    {
+      "date": 1732377745,
+      "sleep_hours": 7.3,
+      "steps": 9638,
+      "heart_rate": 80,
+      "systolic_pressure": 120,
+      "diastolic_pressure": 79
+    },
+    {
+      "date": 1732464145,
+      "sleep_hours": 6.9,
+      "steps": 8393,
+      "heart_rate": 77,
+      "systolic_pressure": 122,
+      "diastolic_pressure": 82
+    },
+    {
+      "date": 1732550545,
+      "sleep_hours": 7.8,
+      "steps": 11706,
+      "heart_rate": 66,
+      "systolic_pressure": 121,
+      "diastolic_pressure": 75
+    },
+    {
+      "date": 1732636945,
+      "sleep_hours": 7.4,
+      "steps": 9853,
+      "heart_rate": 78,
+      "systolic_pressure": 111,
+      "diastolic_pressure": 85
+    },
+    {
+      "date": 1732723345,
+      "sleep_hours": 8.0,
+      "steps": 9953,
+      "heart_rate": 77,
+      "systolic_pressure": 112,
+      "diastolic_pressure": 83
+    },
+    {
+      "date": 1732809745,
+      "sleep_hours": 7.5,
+      "steps": 11410,
+      "heart_rate": 75,
+      "systolic_pressure": 122,
+      "diastolic_pressure": 84
+    },
+    {
+      "date": 1732896145,
+      "sleep_hours": 6.8,
+      "steps": 10071,
+      "heart_rate": 66,
+      "systolic_pressure": 115,
+      "diastolic_pressure": 85
+    },
+    {
+      "date": 1732982545,
+      "sleep_hours": 7.2,
+      "steps": 8785,
+      "heart_rate": 68,
+      "systolic_pressure": 121,
+      "diastolic_pressure": 77
+    },
+    {
+      "date": 1733068945,
+      "sleep_hours": 7.6,
+      "steps": 8365,
+      "heart_rate": 79,
+      "systolic_pressure": 116,
+      "diastolic_pressure": 72
+    }
+  ]
+}
