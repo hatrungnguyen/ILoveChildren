@@ -63,8 +63,6 @@ public class StepFragment extends Fragment {
                 stepsData.setText("No data for this date");
             }
         });
-
-        // Trigger calendar change listener to display today's data
         triggerCurrentDate();
 
         return view;
