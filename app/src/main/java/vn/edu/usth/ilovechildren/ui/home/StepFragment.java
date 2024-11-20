@@ -21,6 +21,7 @@ import org.json.JSONObject;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -52,7 +53,6 @@ public class StepFragment extends Fragment {
             for (int i = 0; i < dates.size(); i++) {
                 if (dates.get(i).equals(selectedDate)) {
                     stepsData.setText(String.format("%s steps", (int) barEntries.get(i).getY()));
-
                     highlightBar(i);
                     found = true;
                     break;
@@ -64,7 +64,36 @@ public class StepFragment extends Fragment {
             }
         });
 
+        // Trigger calendar change listener to display today's data
+        triggerCurrentDate();
+
         return view;
+    }
+
+    private void triggerCurrentDate() {
+        long currentTime = System.currentTimeMillis();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(currentTime);
+        int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
+        int currentMonth = calendar.get(Calendar.MONTH);
+
+        calendarView.setDate(currentTime, false, true);
+
+        String currentDate = String.format(Locale.getDefault(), "%02d/%02d", currentDay, currentMonth + 1);
+
+        boolean found = false;
+        for (int i = 0; i < dates.size(); i++) {
+            if (dates.get(i).equals(currentDate)) {
+                stepsData.setText(String.format("%s steps", (int) barEntries.get(i).getY()));
+                highlightBar(i);
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            stepsData.setText("No data for this date");
+        }
     }
 
     private void setupChartData(String jsonData) {
@@ -82,7 +111,6 @@ public class StepFragment extends Fragment {
                 String date = new SimpleDateFormat("dd/MM", Locale.getDefault())
                         .format(new Date(timestamp * 1000));
                 dates.add(date);
-
 
                 barEntries.add(new BarEntry(i, steps));
             }
