@@ -17,6 +17,7 @@ import androidx.navigation.Navigation;
 
 import vn.edu.usth.myapplication.R;
 
+
 public class HomeFragment extends Fragment {
     private Button diagnosticButton;
     private ImageButton notificationIcon;

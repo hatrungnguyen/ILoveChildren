@@ -115,7 +115,6 @@ public class SettingsFragment extends Fragment {
         intent.setData(uri);
         startActivity(intent);
 
-
     }
 
     private void openMeasurement() {

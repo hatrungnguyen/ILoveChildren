@@ -11,6 +11,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.Objects;
+
 import vn.edu.usth.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                         toolbar.setVisibility(View.GONE);
                     }
                 });
+
+
     }
 
     @Override
