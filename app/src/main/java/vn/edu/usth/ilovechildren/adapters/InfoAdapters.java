@@ -13,7 +13,7 @@ import java.util.List;
 
 import vn.edu.usth.ilovechildren.models.Data;
 import vn.edu.usth.ilovechildren.models.Patient;
-import vn.edu.usth.myapplication.R;
+import vn.edu.usth.ilovechildren.R;
 
 public class InfoAdapters extends RecyclerView.Adapter<InfoAdapters.DailyDataViewHolder> {
     private Patient patient; // Thêm tham chiếu đến Patient

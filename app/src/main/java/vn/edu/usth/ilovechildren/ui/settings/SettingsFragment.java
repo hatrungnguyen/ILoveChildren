@@ -29,7 +29,7 @@ import androidx.navigation.Navigation;
 import java.util.Objects;
 
 import vn.edu.usth.ilovechildren.adapters.InfoAdapters;
-import vn.edu.usth.myapplication.R;
+import vn.edu.usth.ilovechildren.R;
 
 public class SettingsFragment extends Fragment {
 

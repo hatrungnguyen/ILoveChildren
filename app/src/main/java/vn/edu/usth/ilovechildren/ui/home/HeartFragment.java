@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.airbnb.lottie.LottieAnimationView;
 
-import vn.edu.usth.myapplication.R;
+import vn.edu.usth.ilovechildren.R;
 
 public class HeartFragment extends Fragment {
 

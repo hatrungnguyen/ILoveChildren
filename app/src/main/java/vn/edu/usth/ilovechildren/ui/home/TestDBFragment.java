@@ -20,7 +20,7 @@ import java.util.List;
 import vn.edu.usth.ilovechildren.adapters.InfoAdapters;
 import vn.edu.usth.ilovechildren.models.Data;
 import vn.edu.usth.ilovechildren.models.Patient;
-import vn.edu.usth.myapplication.R;
+import vn.edu.usth.ilovechildren.R;
 
 public class TestDBFragment extends Fragment {
 

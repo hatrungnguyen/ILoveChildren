@@ -25,7 +25,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import vn.edu.usth.myapplication.R;
+import vn.edu.usth.ilovechildren.R;
 
 public class StepFragment extends Fragment {
 

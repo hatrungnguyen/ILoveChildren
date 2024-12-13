@@ -21,7 +21,6 @@ public interface PersonDAO {  // Rename to match standard naming conventions
 
     @Delete
     void deletePerson(Data data);
-
     @Query("SELECT * FROM Data")
     List<Data> getPersonDate();
 
