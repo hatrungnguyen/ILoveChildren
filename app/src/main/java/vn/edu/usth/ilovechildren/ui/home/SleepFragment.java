@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.os.Handler;
 import android.widget.TextView;
 import java.util.Calendar;
-import vn.edu.usth.myapplication.R;
+import vn.edu.usth.ilovechildren.R;
 
 public class SleepFragment extends Fragment {
     private Handler handler = new Handler();

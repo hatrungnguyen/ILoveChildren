@@ -36,6 +36,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/haha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -105,6 +106,21 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/weight_input_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        android:hint="Enter weight (kg)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/weight_input_edit_text"
+        android:id="@+id/save_weight_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Weight" />
 
 
 

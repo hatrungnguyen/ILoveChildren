@@ -1,13 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace 'vn.edu.usth.myapplication'
-    compileSdk 34
+    namespace 'vn.edu.usth.ilovechildren'
+    compileSdk 35
 
     defaultConfig {
-        applicationId "vn.edu.usth.myapplication"
+        applicationId "vn.edu.usth.ilovechildren"
         minSdk 26
         targetSdk 34
         versionCode 1
@@ -44,6 +45,9 @@ android {
             }
         }
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 
 }
 
@@ -51,6 +55,10 @@ dependencies {
     implementation ('com.google.code.gson:gson:2.11.0')
     implementation ("androidx.room:room-runtime:2.6.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
+
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:2.1.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
 
     implementation ("androidx.appcompat:appcompat:1.7.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
